@@ -7,7 +7,8 @@ from aiogram import Bot, Dispatcher, F
 from aiogram.filters import CommandStart, Command
 from aiogram.types import Message, ReplyKeyboardMarkup, KeyboardButton
 
-API_TOKEN = "8734268872:AAEW-SFlwmf48eXVCWrZoBT_dPlsuZVOPtQ"
+import os
+API_TOKEN = os.getenv("BOT_TOKEN")
 
 logging.basicConfig(level=logging.INFO)
 
